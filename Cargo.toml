@@ -1,0 +1,16 @@
+[package]
+name = "rust-aws-sdk-s3"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+# File
+tokio-stream = "0.1"
+mime_guess = "2"
+# Aws libs
+aws-config = "0.6"
+aws-sdk-s3 = "0.6"
+# For quick exploration (xp) - use thiserror in prod and libs
+anyhow = "1.0"
